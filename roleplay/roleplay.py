@@ -1,4 +1,3 @@
-
 import discord
 from redbot.core import commands, Config
 from random import randint
@@ -496,15 +495,3 @@ class Roleplay(BaseCog):
 
         if content["data"]["status"]["code"] == 200:
             return content["data"]["response"]["urls"]
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
