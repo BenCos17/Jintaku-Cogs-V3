@@ -238,7 +238,7 @@ class Roleplay(BaseCog):
                 "https://media1.tenor.com/images/d38554c6e23b86c81f8d4a3764b38912/tenor.gif?itemid=11379131",
                 "https://media1.tenor.com/images/05a64a05e5501be2b1a5a734998ad2b2/tenor.gif?itemid=11379130",
             ],
-            "poke": [
+            "poke2": [
                 "https://media1.tenor.com/images/3b2bfd09965bd77f2a8cb9ba59cedbe4/tenor.gif?itemid=5607667",
                 "https://media1.tenor.com/images/514efe749cb611eb382713596e3427d8/tenor.gif?itemid=13054528",
                 "https://media1.tenor.com/images/8795ff617de989265907eed8029a99a3/tenor.gif?itemid=14629871",
@@ -442,13 +442,13 @@ class Roleplay(BaseCog):
 
     @commands.command()
     @commands.bot_has_permissions(embed_links=True)
-    async def poke(self, ctx, *, user: discord.Member):
+    async def poke2(self, ctx, *, user: discord.Member):
         """Pokes a user!"""
 
         author = ctx.message.author
-        images = await self.config.poke()
+        images = await self.config.poke2()
 
-        nekos = await self.fetch_nekos_life(ctx, "poke")
+        nekos = await self.fetch_nekos_life(ctx, "poke2")
         images.extend(nekos)
 
         mn = len(images)
