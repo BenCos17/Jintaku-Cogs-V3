@@ -446,7 +446,7 @@ class Roleplay(BaseCog):
         """Pokes a user!"""
 
         author = ctx.message.author
-        images = await self.config.poke2()
+        images = await self.config.poke()
 
         nekos = await self.fetch_nekos_life(ctx, "poke2")
         images.extend(nekos)
