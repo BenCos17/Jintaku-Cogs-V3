@@ -1,30 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@BenCos17 
-Jintaku
-/
-Jintaku-Cogs-V3
-Public
-Code
-Issues
-18
-Pull requests
-3
-Actions
-More
-Jintaku-Cogs-V3/roleplay/roleplay.py /
-@Sandvich
-Sandvich Fixed double link
-Latest commit b5d6143 on Mar 27, 2021
- History
- 4 contributors
-@Sandvich@Dezyox@SlimeEl@monty-dev
-498 lines (436 sloc)  23.4 KB
 
 import discord
 from redbot.core import commands, Config
