@@ -1,3 +1,31 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@BenCos17 
+Jintaku
+/
+Jintaku-Cogs-V3
+Public
+Code
+Issues
+18
+Pull requests
+3
+Actions
+More
+Jintaku-Cogs-V3/roleplay/roleplay.py /
+@Sandvich
+Sandvich Fixed double link
+Latest commit b5d6143 on Mar 27, 2021
+ History
+ 4 contributors
+@Sandvich@Dezyox@SlimeEl@monty-dev
+498 lines (436 sloc)  23.4 KB
+
 import discord
 from redbot.core import commands, Config
 from random import randint
@@ -238,7 +266,7 @@ class Roleplay(BaseCog):
                 "https://media1.tenor.com/images/d38554c6e23b86c81f8d4a3764b38912/tenor.gif?itemid=11379131",
                 "https://media1.tenor.com/images/05a64a05e5501be2b1a5a734998ad2b2/tenor.gif?itemid=11379130",
             ],
-            "poke2": [
+            "poke": [
                 "https://media1.tenor.com/images/3b2bfd09965bd77f2a8cb9ba59cedbe4/tenor.gif?itemid=5607667",
                 "https://media1.tenor.com/images/514efe749cb611eb382713596e3427d8/tenor.gif?itemid=13054528",
                 "https://media1.tenor.com/images/8795ff617de989265907eed8029a99a3/tenor.gif?itemid=14629871",
@@ -442,13 +470,13 @@ class Roleplay(BaseCog):
 
     @commands.command()
     @commands.bot_has_permissions(embed_links=True)
-    async def poke2(self, ctx, *, user: discord.Member):
+    async def poke(self, ctx, *, user: discord.Member):
         """Pokes a user!"""
 
         author = ctx.message.author
         images = await self.config.poke()
 
-        nekos = await self.fetch_nekos_life(ctx, "poke2")
+        nekos = await self.fetch_nekos_life(ctx, "poke")
         images.extend(nekos)
 
         mn = len(images)
@@ -495,4 +523,15 @@ class Roleplay(BaseCog):
 
         if content["data"]["status"]["code"] == 200:
             return content["data"]["response"]["urls"]
-
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
