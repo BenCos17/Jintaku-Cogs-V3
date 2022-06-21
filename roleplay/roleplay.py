@@ -470,7 +470,7 @@ class Roleplay(BaseCog):
 
     @commands.command()
     @commands.bot_has_permissions(embed_links=True)
-    async def poke(self, ctx, *, user: discord.Member):
+    async def poke2(self, ctx, *, user: discord.Member):
         """Pokes a user!"""
 
         author = ctx.message.author
